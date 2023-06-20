@@ -2,22 +2,22 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
-        colors: {
-            body: {
-                light: "#E4E9F7",
-                dark: "#0E1422",
-            },
+      colors: {
+        body: {
+          light: "#E4E9F7",
+          dark: "#0E1422",
         },
-        fontFamily: {
-            sans: ["Poppins", "sans-serif"],
-        },
+        primary: "#1E83E7"
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
     },
-},
+  },
   plugins: [],
 }
