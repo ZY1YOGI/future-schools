@@ -6,8 +6,6 @@ import Link from 'next/link';
 
 export default function header() {
 
-
-  
   const switchMenu = useRef(null)
 
 
