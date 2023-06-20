@@ -10,7 +10,7 @@ export default function Auth() {
   return (
     <>
       <header>
-        <svg className="waves waves-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg className="waves waves-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
           <defs>
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
           </defs>
@@ -22,6 +22,7 @@ export default function Auth() {
           </g>
         </svg>
       </header>
+
       <main className="main-content">
         <h1 className="title-login mb-11 whitespace-nowrap">Login</h1>
         <form className="form-login-student" method="POST" action={``}>
@@ -41,7 +42,7 @@ export default function Auth() {
 
 
       <footer>
-        <svg className="waves waves-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg className="waves waves-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
