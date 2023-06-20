@@ -6,11 +6,12 @@ import Link from 'next/link';
 
 export default function header() {
 
-  const switchMenu = useRef(null)
+  const switchMenu = useRef<HTMLUListElement>(null)
 
 
   const funcSwitchMenu = () => {
-    switchMenu.current.classList.toggle('!flex')
+      // 👉️ TypeScript knows that ref is not null here
+      switchMenu.current?.classList.toggle('!flex')
   }
 
   return (
