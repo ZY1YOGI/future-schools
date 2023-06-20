@@ -1,13 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { Ref, useRef } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 
 export default function header() {
 
 
-  const switchMenu = useRef<Ref>(null)
+  const switchMenu = useRef(null)
 
   const funcSwitchMenu = () => {
     switchMenu.current.classList.toggle('!flex')
