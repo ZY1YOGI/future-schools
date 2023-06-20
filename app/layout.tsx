@@ -1,12 +1,6 @@
-import type { Metadata } from "next"
-import '@/app/globals.css'
+import './globals.css'
 
 
-export const metadata: Metadata = {
-  applicationName: 'Future Schools',
-  authors: [{ name: 'Youssef Amjad', url: '' }],
-  creator: 'Youssef Amjad',
-}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
