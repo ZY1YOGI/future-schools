@@ -7,7 +7,9 @@ import Link from 'next/link';
 export default function header() {
 
 
+  
   const switchMenu = useRef(null)
+
 
   const funcSwitchMenu = () => {
     switchMenu.current.classList.toggle('!flex')
