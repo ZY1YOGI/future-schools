@@ -36,10 +36,6 @@
   }
 }
 
-
-
-
-
 .header {
   @apply h-screen;
 }
@@ -55,7 +51,8 @@
 }
 
 .nav-link {
-  @apply p-2 ease-in-out border-white max-md:dark:border-x-white hover:border-y-2 rounded-xl max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-800 max-md:inline-block max-md:w-full max-md:px-8 max-md:py-1;
+  @apply p-2 px-3 ease-in-out border-white  hover:border-y-2 rounded-xl text-lg;
+  @apply max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-800 max-md:inline-block max-md:w-full max-md:px-8 max-md:py-1;
 }
 
 .nav-link.active {
@@ -67,9 +64,9 @@
 }
 
 .btn-search {
-  @apply p-2 text-center transition duration-150 ease-out hover:bg-gray-900 dark:text-white hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
+  @apply flex p-2 justify-center transition duration-150 ease-out hover:bg-gray-900 dark:text-white hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
 }
 
 .btn-theme {
-  @apply p-2 transition duration-150 ease-out hover:bg-gray-900 hover:text-white dark:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
+  @apply flex p-2 justify-center transition duration-150 ease-out hover:bg-gray-900 hover:text-white dark:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
 }
