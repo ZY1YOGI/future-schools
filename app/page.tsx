@@ -3,8 +3,8 @@ import HeaderHome from "@/components/Header"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'The Home page'
+  title: 'Future Schools Home',
+  description: 'future schools, مدارس المستقبل, المستقبل الحديثة, مدارس المستقبل الحديثة, الصفحه الرائيسه لمدراس المستقبل'
 }
 
 export default function Home() {
