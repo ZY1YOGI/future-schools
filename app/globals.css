@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  @apply select-none;
+}
 .loader {
   @apply fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center text-center bg-black;
 }
@@ -36,27 +38,24 @@
   }
 }
 
-.header {
-  @apply h-screen;
-}
+
 .negative {
   @apply flex justify-between px-[3%] py-1.5 shadow shadow-stone-600/50 max-h-[6vh] max-md:relative;
 }
 
 .nav-links {
-  @apply flex transition items-center justify-center space-x-8 max-md:space-x-0 max-md:space-y-5
-    max-md:border-4 max-md:border-x-white max-md:border-y-blue-700 rounded-xl max-md:flex-col
-    max-md:items-stretch max-md:absolute max-md:top-[85%] max-md:left-[50%]
-    max-md:py-5 dark:text-white max-md:hidden max-md:bg-body-light max-md:dark:bg-body-dark z-50;
+  @apply flex items-center justify-center space-x-6 rounded-xl transition max-md:py-5 dark:text-white max-md:hidden max-md:bg-body-light max-md:dark:bg-body-dark z-50;
+  @apply max-md:space-x-0 max-md:space-y-5 max-md:border-4  max-md:items-stretch max-md:absolute max-md:top-[85%] max-md:left-[50%] max-md:flex-col;
+  @apply max-md:border-x-white max-md:border-y-blue-700;
 }
 
 .nav-link {
-  @apply p-2 px-3 ease-in-out border-white  hover:border-y-2 rounded-xl text-lg;
+  @apply p-2 px-3 transition ease-out hover:bg-gray-900 hover:text-white hover:dark:bg-slate-800 rounded-xl text-lg;
   @apply max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-800 max-md:inline-block max-md:w-full max-md:px-8 max-md:py-1;
 }
 
 .nav-link.active {
-  @apply font-bold text-blue-700 border-blue-600 lg:border-b;
+  @apply font-bold text-primary border-primary lg:border-b;
 }
 
 .btn-auth {
@@ -64,9 +63,9 @@
 }
 
 .btn-search {
-  @apply flex p-2 justify-center transition duration-150 ease-out hover:bg-gray-900 dark:text-white hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
+  @apply flex p-2 justify-center transition ease-out hover:bg-gray-900 dark:text-white hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
 }
 
 .btn-theme {
-  @apply flex p-2 justify-center transition duration-150 ease-out hover:bg-gray-900 hover:text-white dark:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
+  @apply flex p-2 justify-center transition ease-out hover:bg-gray-900 hover:text-white dark:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
 }
