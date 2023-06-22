@@ -50,12 +50,12 @@ body {
 
 
 .negative {
-  @apply flex justify-between px-[3%] py-1.5 shadow shadow-stone-600/50 max-h-[6vh] max-md:relative;
+  @apply flex justify-between px-[3%] py-2.5 shadow shadow-stone-600/50 max-h-[8vh] max-md:relative;
 }
 
 .nav-links {
   @apply z-50 flex items-center justify-center space-x-6 transition rounded-xl max-md:py-5 dark:text-white max-md:hidden max-md:bg-body-light max-md:dark:bg-body-dark;
-  @apply max-md:space-x-0 max-md:space-y-5 max-md:border-4  max-md:items-stretch max-md:absolute max-md:top-[85%] max-md:left-[50%] max-md:flex-col;
+  @apply max-md:space-x-0 max-md:space-y-5 max-md:border-4  max-md:items-stretch max-md:absolute max-md:top-[85%] max-md:left-[45%] max-md:flex-col;
   @apply max-md:border-x-white max-md:border-y-blue-700;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .btn-auth {
-  @apply px-4 py-1.5 text-sm font-bold text-white transition bg-black dark:bg-gray-50 dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 rounded-xl flex items-center cursor-pointer;
+  @apply px-5 py-2.5 text-sm font-bold text-white transition bg-black dark:bg-gray-50 dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 rounded-xl flex items-center cursor-pointer;
 }
 
 .btn-search {
