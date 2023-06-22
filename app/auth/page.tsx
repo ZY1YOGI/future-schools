@@ -4,7 +4,8 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: 'Auth',
-  description: 'The Auth page'
+  description: 'future schools, مدارس المستقبل, المستقبل الحديثة, مدارس المستقبل الحديثة, صفحه تسجيل الدحول'
+
 }
 
 export default function Auth() {
