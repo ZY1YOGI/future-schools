@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import HeaderHome from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -50,6 +51,7 @@ export default function Home() {
 
         </div>
       </section>
+      <Footer />
     </>
   )
 }
