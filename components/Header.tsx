@@ -94,8 +94,8 @@ export default function Header() {
 
       <section className='container mx-auto flex max-md:flex-col md:items-center mt-12'>
         <section className="md:w-1/2 max-md:text-center flex-1">
-          <h1 className="text-4xl mb-6 text-[#070439]">Future Private Schools We care about all the details of our students</h1>
-          <p className="font-semibold mb-6 text-[#444444]">
+          <h1 className="text-4xl mb-6 text-[#070439] dark:text-white">Future Private Schools We care about all the details of our students</h1>
+          <p className="font-semibold mb-6 text-[#444444] dark:text-gray-300">
             Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
             without relying on meaningful content.
           </p>

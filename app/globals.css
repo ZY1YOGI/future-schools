@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   @apply select-none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#27a758, #068d3a, #27a758);
+  border-radius: 8px;
 }
 .loader {
   @apply fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center text-center bg-black;
