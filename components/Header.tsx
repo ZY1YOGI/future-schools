@@ -35,7 +35,7 @@ export default function Header() {
       <nav className="negative">
         {/* left Header */}
         <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
-          <Image src="/logo.png" alt="logo future schools" width={55} height={55} priority={true}/>
+          <Image src="/logo.png" alt="logo future schools" width={55} height={55} priority={true} className='dark:bg-white rounded-full'/>
           <Link href='/' className="text-2xl font-bold dark:text-teal-50">Future</Link>
         </div>
         {/* left Header */}
