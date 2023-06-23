@@ -1,19 +1,20 @@
 'use client';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { BiUserCircle } from 'react-icons/bi'
 import { BsBarChartSteps, BsSearch } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { FaBars } from 'react-icons/fa'
+import Aos from "aos";
 
 
 export default function Header() {
 
   const switchMenu = useRef<HTMLUListElement>(null)
 
-
-  if (typeof window !== 'undefined') {
+  useEffect(() => {
+    Aos.init()
     const theme = localStorage.getItem("theme") ?? localStorage.setItem("theme", "light")
     if (theme === "light") {
       document.documentElement.className = "light";
@@ -22,25 +23,19 @@ export default function Header() {
       document.documentElement.className = "dark";
       document.documentElement.setAttribute("data-theme", "dark");
     }
-  }
 
+  })
 
-
-  const funcSwitchMenu = () => {
-    switchMenu.current?.classList.toggle('!flex')
-  }
 
   return (
     <header className="">
       <nav className="negative">
         {/* left Header */}
         <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
-          <Image src="/logo.png" alt="logo future schools" width={55} height={55} priority={true} className='dark:bg-white rounded-full'/>
+          <Image src="/logo.png" alt="logo future schools" width={55} height={55} priority={true} className='dark:bg-white rounded-full' />
           <Link href='/' className="text-2xl font-bold dark:text-teal-50">Future</Link>
         </div>
         {/* left Header */}
-
-
 
         {/* Negative */}
         <ul className='nav-links' ref={switchMenu}>
@@ -77,9 +72,8 @@ export default function Header() {
         </ul>
         {/* Negative */}
 
-
         {/* Right Header */}
-        <button className='hidden max-md:block' onClick={funcSwitchMenu} role="switch">
+        <button className='hidden max-md:block' onClick={() => switchMenu.current?.classList.toggle('!flex')} role="switch" aria-label='switch menu' aria-hidden={true}>
           <FaBars size={25} className='dark:text-white' />
         </button>
 
@@ -92,8 +86,8 @@ export default function Header() {
 
       <section className='container mx-auto flex max-md:flex-col md:items-center mt-8'>
         <section className="md:w-1/2 max-md:text-center flex-1">
-          <h1 className="text-3xl mb-5 text-[#070439] dark:text-white max-md:px-1">Future Schools We care about all the details of our students</h1>
-          <p className="font-semibold mb-8 text-[#444444] dark:text-gray-300 max-md:px-2">
+          <h1 className="text-3xl mb-5 text-[#070439] dark:text-white max-md:px-1" data-aos="fade-down" data-aos-delay="150">Future Schools We care about all the details of our students</h1>
+          <p className="font-semibold mb-8 text-[#444444] dark:text-gray-300 max-md:px-2" data-aos="fade-up" data-aos-delay="350">
             Modern Future Schools are apprentice schools that offer different departments for students, the Programming Department, the Computer Department, and the Chemical Laboratory Department
           </p>
 
@@ -101,9 +95,9 @@ export default function Header() {
         </section>
 
         <section className="max-md:-order-1 flex-1">
-          <img src='/hero.svg' alt='svg student future schools egypt'/>
+          <Image src='/hero.svg' width={1000} height={1000} priority={true} alt='student future schools egypt' />
         </section>
       </section>
-    </header >
+    </header>
   )
 }

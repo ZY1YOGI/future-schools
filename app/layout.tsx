@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import '@/app/globals.css'
 import Script from 'next/script';
 
+
+
 export const metadata: Metadata = {
   applicationName: 'Future Schools',
   authors: [{ name: 'Youssef Amjad', url: '' }],
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  
   return (
     <html lang="en" className="light" data-theme="light">
       

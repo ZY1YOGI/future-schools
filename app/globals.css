@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'aos/dist/aos.css';
+
 
 body {
   @apply select-none;
@@ -27,7 +29,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
-
+  
   50% {
     transform: rotate(180deg);
   }
@@ -79,3 +81,5 @@ body {
 .btn-theme {
   @apply flex justify-center p-2 transition ease-out hover:bg-gray-900 hover:text-white dark:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900 max-md:p-1;
 }
+
+
