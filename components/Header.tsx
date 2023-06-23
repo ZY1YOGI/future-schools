@@ -73,7 +73,7 @@ export default function Header() {
         {/* Negative */}
 
         {/* Right Header */}
-        <button className='hidden max-md:block' onClick={() => switchMenu.current?.classList.toggle('!flex')} role="switch" aria-label='switch menu' aria-hidden={true}>
+        <button className='hidden max-md:block' onClick={() => switchMenu.current?.classList.toggle('!flex')} role="switch" aria-label='switch menu' aria-checked='mixed'>
           <FaBars size={25} className='dark:text-white' />
         </button>
 
