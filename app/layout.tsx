@@ -1,13 +1,21 @@
 import type { Metadata } from "next"
 import '@/app/globals.css'
 import Script from 'next/script';
+import 'aos/dist/aos.css';
+
+
 
 export const metadata: Metadata = {
   applicationName: 'Future Schools',
   authors: [{ name: 'Youssef Amjad', url: '' }],
   creator: 'Youssef Amjad',
   verification: { google: 'wZO1kaaUlZm8cLkM3C_dSzZu_XEW4XNbS7D_Xmjwpw4' },
-
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0E1422" },
+    { media: "(prefers-color-scheme: light)", color: "#E4E9F7" }
+  ],
+  manifest: "/manifest.json",
+  robots: "index, follow",
   icons: [
     {
       rel: 'icon',
@@ -30,9 +38,10 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="en" className="light" data-theme="light">
-      
+
       <body className="antialiased bg-body-light dark:bg-body-dark">
         {children}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLGP0D7K5M"></script>

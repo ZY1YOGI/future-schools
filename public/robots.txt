@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://future-schools.vercel.app/sitemap.xml
