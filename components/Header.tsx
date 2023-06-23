@@ -39,26 +39,18 @@ export default function Header() {
 
         {/* Negative */}
         <ul className='nav-links' ref={switchMenu}>
-          <Link className='nav-link' href="/">Home</Link>
-          <Link className='nav-link' href="/">Profile</Link>
-          <Link className='nav-link' href="/">Editor</Link>
-          <Link className='nav-link' href="/">Services</Link>
+          <li><Link className='nav-link' href="/">Home</Link></li>
+          <li><Link className='nav-link' href="/">Profile</Link></li>
+          <li><Link className='nav-link' href="/">Editor</Link></li>
+          <li><Link className='nav-link' href="/">Services</Link></li>
+
           <li className="relative nav-link group" id="nav-link-categories">
             <button className="flex items-center">Rooms <BsBarChartSteps className='ml-1.5' /></button>
             <ul role="menu" className="group-hover:block z-50 text-center absolute hidden w-40 whitespace-nowrap space-y-5 top-8 left-[50%] max-md:left-[12%] border-4 border-x-white border-y-primary rounded-xl py-3 px-1 bg-body-light dark:bg-body-dark">
-              <li className=''>
-                <Link className='nav-link min-w-full' href="/">@</Link>
-              </li>
-              <li>
-                <Link className='nav-link' href="/">@</Link>
-              </li>
-              <li>
-                <Link className='nav-link' href="/">@</Link>
-              </li>
-              <li>
-                <Link className='nav-link' href="/">@</Link>
-              </li>
-
+              <li><Link className='nav-link min-w-full' href="/">@</Link></li>
+              <li><Link className='nav-link' href="/">@</Link></li>
+              <li><Link className='nav-link' href="/">@</Link></li>
+              <li><Link className='nav-link' href="/">@</Link></li>
             </ul>
           </li>
 

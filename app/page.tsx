@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 export const metadata: Metadata = {
   title: 'Future Schools Home',
   description: 'مدارس المستقبل الحديثه هيا مدارس تلمذه صناعية و مرخصه من وزاره التربيه و التعليم',
-  keywords: ['future schools', 'الصفحه الرائيسه لمدراس المستقبل', 'مدارس المستقبل الحديثة', 'مدرسة المستقبل', 'مدارس التلمذه الصناعية']
+  keywords: ['future schools', 'الصفحه الرائيسه لمدراس المستقبل', 'مدارس المستقبل الحديثة', 'مدرسة المستقبل', 'مدارس التلمذه الصناعية', 'مدرسة', 'تقديم الثانوية']
 }
 
 export default function Home() {
