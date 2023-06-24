@@ -6,7 +6,7 @@ import { BiUserCircle } from 'react-icons/bi'
 import { BsBarChartSteps, BsSearch } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { FaBars } from 'react-icons/fa'
-import Aos from "aos";
+// import Aos from "aos";
 
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
   const switchMenu = useRef<HTMLUListElement>(null)
 
   useEffect(() => {
-    Aos.init()
+    // Aos.init()
     const theme = localStorage.getItem("theme") ?? localStorage.setItem("theme", "light")
     if (theme === "light") {
       document.documentElement.className = "light";
