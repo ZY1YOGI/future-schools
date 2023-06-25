@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Profile Youssef',
-  description: '',
-  keywords: []
+  description: 'يمكنك عرض الملف الخاص بك و يمكنك الوصول الي كل الخدمات التي تقدمها اكاديمية المستقبل لطلابها',
+  keywords: ['profile', 'profile student', 'future school', 'عرض ملف الطالب']
 }
 
 export default function Profile() {
@@ -18,12 +18,7 @@ export default function Profile() {
       <Navigation />
 
       <main className="container mx-auto text-center pt-3 dark:text-white">
-
-        <div className="h-[50vh] w-full">
-
-        </div>
-
-        <h1 className="text-3xl" data-aos="fade-up" data-aos-delay="350">Hi Youssef</h1>
+        <h1 className="text-3xl" data-aos="fade-up" data-aos-delay="350">Hi Student</h1>
 
         <div className="flex max-md:flex-col space-x-12 max-md:space-x-0 max-md:space-y-10 justify-between mt-12 max-md:px-3">
 
@@ -47,7 +42,7 @@ export default function Profile() {
           </div>
 
           <div className="box">
-            <Image src="/image/student_statistics.png" width={500} height={500} alt="student statistics" />
+            <Image src="/image/student_deg.png" width={500} height={500} alt="student statistics" />
             <div className="text">
               <h2 data-aos="fade-up">اعرف سلوكك مع المعلم</h2>
               <p>اكتشف تقيم المعلم الخاص بك و حاول التقدم بنفسك من خلال النصائح التي تقدم لك</p>

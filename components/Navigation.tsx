@@ -33,8 +33,8 @@ export default function Navigation() {
     <nav className="navigation">
 
       <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
-        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' data-aos="fade-down" data-aos-delay="350"/>
-        <Link href='/' className="text-2xl font-bold dark:text-teal-50" data-aos="fade-left" data-aos-delay="450">Future</Link>
+        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' data-aos="fade-down" data-aos-delay="250"/>
+        <Link href='/' className="text-2xl font-bold dark:text-teal-50" data-aos="fade-left" data-aos-delay="350">Future</Link>
       </div>
 
       <ul className='nav-links' ref={switchMenu}>

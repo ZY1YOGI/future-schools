@@ -11,8 +11,8 @@ export default function Footer() {
           <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div className="w-full mb-10">
               <Link href="/" className="flex items-center mb-5 space-x-3 cursor-pointer">
-                <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} />
-                <h1 className="text-xl dark:text-teal-50">Future</h1>
+                <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' data-aos="fade-down" data-aos-delay="250"/>
+                <h1 className="text-xl dark:text-teal-50" data-aos="fade-right" data-aos-delay="350">Future</h1>
               </Link>
               <p className="text-base text-body-color mb-7">
                 Modern Future Schools are apprentice schools that offer different departments for students, the Programming Department, the Computer Department, and the Chemical Laboratory Department

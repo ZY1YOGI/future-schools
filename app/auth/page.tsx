@@ -3,9 +3,9 @@ import "./auth.css"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Auth',
-  description: 'future schools, مدارس المستقبل, المستقبل الحديثة, مدارس المستقبل الحديثة, صفحه تسجيل الدحول'
-
+  title: 'Login To Future School | تسجيل الدخول لمدرسة المستقبل',
+  description: 'تسجيل الدخول لعرض درجاتك و سلوكك وعرض كل النتائج الخاصه بك بمجرد تسجيل الدخول بحسابك كطالب يمكنك الوصول الي كل الخدمات التي تقدمها اكادمية المستقبل',
+  keywords: ['future schools', 'auth future school', 'login future school', 'تسجيل الدخول مدرسة المستقبل', 'مدرسة المستقبل']
 }
 
 export default function Auth() {

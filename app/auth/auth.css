@@ -94,7 +94,7 @@
 .input-field {
   border: 0;
   border-bottom: 2px solid #1e83e7;
-  @apply text-[#1e83e7] py-1.5 md:text-xl bg-transparent transition-[border-color] outline-0 placeholder:text-transparent;
+  @apply text-[#1e83e7] py-1.5  text-xl md:text-2xl bg-transparent transition-[border-color] outline-0 placeholder:text-transparent;
 }
 
 .input-field:placeholder-shown ~ .input-label {
