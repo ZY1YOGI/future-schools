@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import HeaderHome from "@/components/Header"
+import HeaderHome from "@/components/HeaderHome"
 import Footer from "@/components/Footer"
 import ServicesSection from "@/components/sections/ServicesSection"
 
 export const metadata: Metadata = {
-  title: 'Future Schools Home',
+  title: 'Future Schools Home | الصفحه الرائيسه لمدراس المستقبل',
   description: 'مدارس المستقبل الحديثه هيا مدارس تلمذه صناعية و مرخصه من وزارة التربيه و التعليم',
   keywords: ['future schools', 'الصفحه الرائيسه لمدراس المستقبل', 'مدارس المستقبل الحديثة', 'مدرسة المستقبل', 'مدارس التلمذه الصناعية', 'مدرسة', 'تقديم الثانوية']
 }
