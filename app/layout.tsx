@@ -6,8 +6,9 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   applicationName: 'Future Schools',
-  authors: [{ name: 'Youssef Amjad', url: '' }],
+  authors: [{ name: 'Youssef Amjad', url: 'https://www.facebook.com/ZY1YOGi' }],
   creator: 'Youssef Amjad',
+  publisher: 'Youssef Amjad',
   verification: { google: 'wZO1kaaUlZm8cLkM3C_dSzZu_XEW4XNbS7D_Xmjwpw4' },
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "#0E1422" },

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useRef, useEffect } from 'react';
 import Link from 'next/link';
+import TagManager from 'react-gtm-module';
 import { BiUserCircle } from 'react-icons/bi'
 import { BsBarChartSteps, BsSearch } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
@@ -18,6 +19,7 @@ export default function Navigation() {
     Aos.init({
       delay: 300
     })
+    TagManager.initialize({ gtmId: 'GTM-NV54S9F' });
     const theme = localStorage.getItem("theme") ?? localStorage.setItem("theme", "light")
     if (theme === "light") {
       document.documentElement.className = "light";
@@ -33,7 +35,7 @@ export default function Navigation() {
     <nav className="navigation">
 
       <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
-        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' data-aos="fade-down" data-aos-delay="250"/>
+        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='rounded-full dark:bg-white' data-aos="fade-down" data-aos-delay="250"/>
         <Link href='/' className="text-2xl font-bold dark:text-teal-50" data-aos="fade-left" data-aos-delay="350">Future</Link>
       </div>
 
@@ -46,7 +48,7 @@ export default function Navigation() {
         <li className="relative nav-link group" id="nav-link-categories">
           <button className="flex items-center">Rooms <BsBarChartSteps className='ml-1.5' /></button>
           <ul role="menu" className="group-hover:block z-50 text-center absolute hidden w-40 whitespace-nowrap space-y-5 top-8 left-[50%] max-md:left-[12%] border-4 border-x-white border-y-primary rounded-xl py-3 px-1 bg-body-light dark:bg-body-dark">
-            <li><Link className='nav-link min-w-full' href="/">@</Link></li>
+            <li><Link className='min-w-full nav-link' href="/">@</Link></li>
             <li><Link className='nav-link' href="/">@</Link></li>
             <li><Link className='nav-link' href="/">@</Link></li>
             <li><Link className='nav-link' href="/">@</Link></li>
@@ -70,12 +72,12 @@ export default function Navigation() {
 
       {
         user ?
-          <Link className='btn-auth space-x-3' href="/auth/logout">
+          <Link className='space-x-3 btn-auth' href="/auth/logout">
             <AiOutlineLogout size={25} title='logout user' />
             Logout
           </Link>
           :
-          <Link className='btn-auth space-x-3' href="/auth">
+          <Link className='space-x-3 btn-auth' href="/auth">
             <BiUserCircle size={26} title='login user' />
             Login
           </Link>
