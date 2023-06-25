@@ -2,8 +2,6 @@ import type { Metadata } from "next"
 import '@/app/globals.css'
 import Script from 'next/script';
 
-// import 'aos/dist/aos.css';
-
 
 
 export const metadata: Metadata = {

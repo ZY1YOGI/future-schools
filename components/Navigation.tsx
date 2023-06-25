@@ -6,14 +6,18 @@ import { BiUserCircle } from 'react-icons/bi'
 import { BsBarChartSteps, BsSearch } from 'react-icons/bs'
 import { MdDarkMode } from 'react-icons/md'
 import { FaBars } from 'react-icons/fa'
-// import Aos from "aos";
+import { AiOutlineLogout } from 'react-icons/ai'
+import Aos from "aos";
 
 
 export default function Navigation() {
   const switchMenu = useRef<HTMLUListElement>(null)
+  const user = false;
 
   useEffect(() => {
-    // Aos.init()
+    Aos.init({
+      delay: 300
+    })
     const theme = localStorage.getItem("theme") ?? localStorage.setItem("theme", "light")
     if (theme === "light") {
       document.documentElement.className = "light";
@@ -27,18 +31,16 @@ export default function Navigation() {
 
   return (
     <nav className="navigation">
-      {/* left Header */}
-      <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
-        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' />
-        <Link href='/' className="text-2xl font-bold dark:text-teal-50">Future</Link>
-      </div>
-      {/* left Header */}
 
-      {/* navigation */}
+      <div className="flex items-center justify-center space-x-1.5 cursor-pointer">
+        <Image src="/logo.png" alt="logo future schools" width={50} height={50} priority={true} className='dark:bg-white rounded-full' data-aos="fade-down" data-aos-delay="350"/>
+        <Link href='/' className="text-2xl font-bold dark:text-teal-50" data-aos="fade-left" data-aos-delay="450">Future</Link>
+      </div>
+
       <ul className='nav-links' ref={switchMenu}>
         <li><Link className='nav-link' href="/">Home</Link></li>
         <li><Link className='nav-link' href="/profile">Profile</Link></li>
-        <li><Link className='nav-link' href="/">Editor</Link></li>
+        <li><Link className='nav-link' href="/editor">Editor</Link></li>
         <li><Link className='nav-link' href="/">Services</Link></li>
 
         <li className="relative nav-link group" id="nav-link-categories">
@@ -59,18 +61,25 @@ export default function Navigation() {
           <MdDarkMode size={28} />
         </button>
       </ul>
-      {/* navigation */}
 
-      {/* Right Header */}
       <button className='hidden max-md:block' onClick={() => switchMenu.current?.classList.toggle('!flex')} role="switch" aria-label='switch menu' aria-checked='mixed'>
         <FaBars size={25} className='dark:text-white' />
       </button>
 
-      <Link className='btn-auth space-x-3' href="/auth">
-        <BiUserCircle size={26} title='login user' />
-        Login
-      </Link>
-      {/* Right Header */}
+
+
+      {
+        user ?
+          <Link className='btn-auth space-x-3' href="/auth/logout">
+            <AiOutlineLogout size={25} title='logout user' />
+            Logout
+          </Link>
+          :
+          <Link className='btn-auth space-x-3' href="/auth">
+            <BiUserCircle size={26} title='login user' />
+            Login
+          </Link>
+      }
     </nav>
   )
 }
