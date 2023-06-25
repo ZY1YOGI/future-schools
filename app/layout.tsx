@@ -43,8 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <body className="antialiased bg-body-light dark:bg-body-dark">
         {children}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLGP0D7K5M"></script> */}
-        {/* <Script id="google-analytics" strategy="afterInteractive">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLGP0D7K5M"></script>
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             gtag('config', 'G-YLGP0D7K5M');
           `}
-        </Script> */}
+        </Script>
 
       </body>
     </html>
