@@ -1,0 +1,24 @@
+.box {
+  @apply rounded-xl transition-shadow duration-500 ease-in-out shadow-[0_0_.3rem_#978cff9f] hover:shadow-[0_0_3rem_#978cff9f] overflow-hidden
+}
+
+
+.box img {
+  @apply w-full object-cover
+}
+
+.box .text {
+  @apply py-5 px-2.5
+}
+
+.box .text h2 {
+  @apply text-2xl font-bold
+}
+
+.box .text p {
+  @apply text-[#7568ff] text-base m-[20px_0]
+}
+
+.btn {
+  @apply text-[#4400ff] border border-[#7568ff] rounded-xl py-2 px-7 outline outline-1 outline-offset-2 outline-[#8a80ff] dark:text-white;
+}
