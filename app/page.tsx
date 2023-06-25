@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <HeaderHome />
       <ServicesSection />
-      <Footer />s
+      <Footer />
     </>
   )
 }
